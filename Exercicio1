@@ -1,0 +1,46 @@
+//Faça um programa que calcule a soma dos N primeiros números primos, sendo N definido pelo
+usuário na função main. O programa ainda deverá ter as funções somaPrimos e primo, sendo que
+a primeira será responsável pela soma dos números que forem primos e a segunda será
+responsável por verificar se o número em questão é primo ou não.
+//Isabela Orçati
+#include <stdio.h>
+int primo();
+int somaPrimos(int nu);
+int main(){
+int N = 0;
+printf("Digite um número: ");
+scanf("%i"
+, &N);
+somaPrimos(N);
+}
+int somaPrimos(int nu){
+int i = 0;
+int divisores = 0;
+int soma = 0;
+for (i = nu - 1; i > 1; i--){
+if(nu % i == 0){
+divisores++;
+}else{
+soma = soma + i;
+}
+}
+printf("Soma: %i\n"
+, soma);
+int primo(){
+int i = 0;
+int divisores = 0;
+for (i = nu - 1; i > 1; i--){
+if(nu % i == 0){
+divisores++;
+}
+}
+if (divisores > 0){
+printf("O número não é primo.
+");
+} else{
+printf("O número é primo.
+");
+}
+}
+}
+primo(soma);
