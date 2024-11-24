@@ -1,0 +1,26 @@
+//Faça uma função que calcule o n-ésimo termo da série de Fibonacci.
+//Isabela Orçati
+#include <stdio.h>
+int fibonacci(int n);
+int main(){
+int n;
+printf("Digite um número: ");
+scanf("%i"
+, &n);
+printf("%i"
+, fibonacci(n));
+}
+int fibonacci(int n){
+int i = 0;
+int x = 0;
+int y = 1;
+int temp;
+printf("Fibonacci: ");
+for(i = 0; i <= n; i++){
+temp = y;
+y = y + x;
+x = temp;
+printf("%i "
+, x);
+}
+}
