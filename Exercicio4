@@ -1,0 +1,21 @@
+//Faça uma função que retorne o resultado do somatório abaixo, sendo n o parâmetro de entrada da
+função.
+//Isabela Orçati
+#include <stdio.h>
+int somatorio (int n);
+int main(){
+int n;
+printf("Digite um numero: ");
+scanf("%i"
+, &n);
+printf("Resultado do somatorio: %i"
+, somatorio(n));
+}
+int somatorio (int n){
+int i = 1;
+int soma = 0;
+for(i = 1; i <= n; i++){
+soma = soma + (5 * (i * i) + 2 * i + 8);
+}
+return soma;
+}
